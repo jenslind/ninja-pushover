@@ -49,7 +49,7 @@ function myDriver(opts,app) {
 
     // Register a device
     
-    if(self._opts.token_key != "") {
+    if(self._opts.token_key) {
     	self.emit('register', new Device(self._opts.token_key, self._opts.user_key));
     }
     console.log(self._opts);
